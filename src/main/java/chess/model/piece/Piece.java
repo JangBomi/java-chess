@@ -65,6 +65,10 @@ public abstract class Piece {
 
     public abstract String getName();
 
+    public String getPieceName() {
+        return (team.name() + "-" + getName()).toLowerCase();
+    }
+
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
